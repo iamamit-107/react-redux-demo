@@ -1,4 +1,5 @@
 import burgerReducer from "./burger/burgerReducer";
+import userReducer from "./user/userReducer";
 
 const { combineReducers } = require("redux");
 const { default: icecreamReducer } = require("./icecream/icecreamReducer");
@@ -8,6 +9,7 @@ const rootReducer = combineReducers({
   cake: cakeReducer,
   icecream: icecreamReducer,
   burger: burgerReducer,
+  users: userReducer,
 });
 
 export default rootReducer;
